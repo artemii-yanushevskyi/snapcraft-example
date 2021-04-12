@@ -1,0 +1,9 @@
+workflows:
+  snapcraft-release:
+    name: Snapcraft Release
+    instance_type: linux
+    environment:
+      vars:
+        SNAPCRAFT_LOGIN_CREDENTIALS: 1234568
+    scripts:
+      - snapcraft snap --output codemagic-snapcraft-example.snap

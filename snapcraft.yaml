@@ -1,0 +1,21 @@
+name: codemagic-snapcraft-example
+summary: Example Snapcraft publishing configuration for Codemagic CI/CD
+description: |
+  Use codemagic.yaml template to configure publishing to Snapcraft
+version: '1.0'
+
+apps:
+  codemagic-snapcraft-example:
+    command: example
+
+parts:
+  codemagic-snapcraft-example:
+    plugin: go
+    source: .
+    go-importpath: codemagic-snapcraft-example
+
+plugs:
+  codemagic-snapcraft-example-home:
+    interface: home
+  codemagic-snapcraft-example-network:
+    interface: network
