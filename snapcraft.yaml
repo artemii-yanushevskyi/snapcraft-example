@@ -9,13 +9,17 @@ apps:
     command: example
 
 parts:
-  codemagic-snapcraft-example:
+  example:
     plugin: go
     source: .
-    go-importpath: codemagic-snapcraft-example
+    go-importpath: example
 
 plugs:
   codemagic-snapcraft-example-home:
     interface: home
   codemagic-snapcraft-example-network:
     interface: network
+
+confinement: strict
+grade: stable
+ 
