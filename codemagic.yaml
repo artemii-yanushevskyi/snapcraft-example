@@ -9,7 +9,7 @@ workflows:
       - yes | sudo apt install golang-go
       - sudo snap install snapcraft --classic
       - snapcraft snap --output codemagic-snapcraft-example.snap
-      - echo $SNAPCRAFT_LOGIN_CREDENTIALS > snapcraft-login-credentials
+      - echo $SNAPCRAFT_LOGIN_CREDENTIALS > ~/snapcraft-login-credentials
       - snapcraft login --with snapcraft-login-credentials
       - snapcraft register codemagic-snapcraft-example
       - snapcraft push codemagic-snapcraft-example.snap
