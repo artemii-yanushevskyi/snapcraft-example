@@ -2,15 +2,15 @@
 
 ## Create snap
 
-    snapcraft snap --output codemagic-snapcraft-example.snap
+    snapcraft snap --output codemagic-example.snap
 
 ## Clean
 
-    snapcraft clean codemagic-snapcraft-example -s pull
+    snapcraft clean codemagic-example -s pull
 
 ## Install (without codesigning)
 
-    sudo snap install codemagic-snapcraft-example.snap --dangerous
+    sudo snap install codemagic-example.snap --dangerous
 
 ## Login
 
@@ -22,20 +22,20 @@ Will create a file `snapcraft-login-credentials`. To login in CI/CD environment 
 
 ## Publish
 
-    snapcraft register codemagic-snapcraft-example # if not already
-    snapcraft push codemagic-snapcraft-example.snap
-    snapcraft release codemagic-snapcraft-example revision-number channel
+    snapcraft register codemagic-example # if not already
+    snapcraft push codemagic-example.snap
+    snapcraft release codemagic-example revision-number channel
     
  
 Channels: `stable`, `candidate`, `beta`, and `edge`
 
 ## Install from snapcraft
 
-    sudo snap install codemagic-snapcraft-example
+    sudo snap install codemagic-example
 
 ## Uninstall
 
-    sudo snap remove codemagic-snapcraft-example
+    sudo snap remove codemagic-example
 
 # Install snapcraft on macOS
 
