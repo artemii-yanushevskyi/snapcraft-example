@@ -6,4 +6,5 @@ workflows:
       vars:
         SNAPCRAFT_LOGIN_CREDENTIALS: 1234568
     scripts:
+      - sudo snap install snapcraft --classic
       - snapcraft snap --output codemagic-snapcraft-example.snap
