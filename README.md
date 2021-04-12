@@ -22,8 +22,7 @@ Will create a file `snapcraft-login-credentials`. To login in CI/CD environment 
 
 ## Publish
 
-    snapcraft login
-    snapcraft register codemagic-snapcraft-example
+    snapcraft register codemagic-snapcraft-example # if not already
     snapcraft push codemagic-snapcraft-example.snap
     snapcraft release codemagic-snapcraft-example revision-number channel
     
